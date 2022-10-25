@@ -12,7 +12,6 @@ class Node:
 
 class Bucket:
     def __init__(self, head = None):
-        self.head = head
         self.size = 0
 
     def __str__(self):
@@ -40,6 +39,7 @@ class Bucket:
     def insert(self, key, value):
         if not self.contains(key):
             node = Node(key, value, self.head)
+            node.next = self.head
             self.head = node
             self.size += 1
             return
