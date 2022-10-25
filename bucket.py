@@ -11,8 +11,9 @@ class Node:
         self.next = next
 
 class Bucket:
-    def __init__(self, head = None):
+    def __init__(self):
         self.size = 0
+        self.head = None
 
     def __str__(self):
         ret_str = ''
@@ -87,15 +88,4 @@ class Bucket:
 
 
 if __name__ == '__main__':
-    m = Bucket()
-    m[1] = 1
-    m[2] = 2
-    m[5] = 5
-    m[7] = 7
-    m[3] = 3
-    m[2] = 0
-    print(m)
-    m.remove(2)
-    m.remove(1)
-    m.remove(5)
-    m.remove(7)
+    pass

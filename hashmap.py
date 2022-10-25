@@ -1,4 +1,5 @@
 from bucket import *
+
 class HashMap:
     def __init__(self):
         self.capacity = 2
@@ -57,10 +58,4 @@ class HashMap:
             self.map = temp
 
 if __name__ == '__main__':
-    m = HashMap()
-    for i in range(10):
-        m.insert(i * 5, f'{i}')
-    m[10] = 'Hæ'
-    for i in m.map:
-        if i.head != None:
-            print(i)
+    pass
